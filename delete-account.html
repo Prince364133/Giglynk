@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account Request — GigLynk</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .delete-box {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 420px;
+    }
+    h2 {
+      text-align: center;
+      color: #ff4b4b;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      background: #ff4b4b;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #e63b3b;
+    }
+    p {
+      font-size: 13px;
+      text-align: center;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="delete-box">
+    <h2>Delete Account Request</h2>
+    <form action="mailto:giglynk.in@gmail.com" method="post" enctype="text/plain">
+      <label>Full Name</label>
+      <input type="text" name="Full Name" required>
+
+      <label>Registered Email / Phone Number</label>
+      <input type="text" name="Registered Contact" required>
+
+      <label>Reason for Deletion</label>
+      <textarea name="Reason" rows="4" placeholder="Write your reason..." required></textarea>
+
+      <button type="submit">Request Account Deletion</button>
+    </form>
+    <p>Once we receive your request, we’ll verify your account and permanently delete all associated data within 7 working days.</p>
+  </div>
+</body>
+</html>
